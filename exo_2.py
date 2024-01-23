@@ -9,7 +9,7 @@ expDiv = restDiv ** 3
 
 try:
 
-    inputInteger = input("enter integer")
+    inputInteger = input("enter integer ")
     useInputInteger = int(inputInteger)
     
     print(f"Enterd value: {useInputInteger}")
@@ -37,7 +37,43 @@ elif orderPrice > allowance_money:
 elif orderPrice > allowance_money and allowance_money - orderPrice == 0:
     print("Vous êtes fauché")
 
-    
-    
-
 print(format(orderPrice, '.02f'))
+
+
+
+#exo 7
+def compareValues(value1, value2):
+   
+    
+    if value1 > value2:
+        print(f"Value 2 is inferior in value 1")
+    if value1 < value2:
+        print(f"Value 1 is inferior in value 2")
+    elif value1 == value2:
+        print("The values are equal")
+        
+        
+        
+value1 = input("Enter first value ")
+value2 = input("Enter second value ")
+compareValues(value1, value2)
+
+def compareChain(chain1, chain2):
+    
+    if len(chain1) > len(chain2):
+        print(f"Chain 2 ({len(chain2)} characters) is inferior in chain 1 ({len(chain1)} characters)")
+    if len(chain1) < len(chain2):
+        print(f"Chain  1 ({len(chain1)} characters) is inferior in chain 2 ({len(chain2)} characters)")
+    elif len(chain1) == len(chain2):
+        print(f"The values are equal ({len(chain1)} characters)")
+        
+chain1 = input("Enter first chain ")
+chain2 = input("Enter second chain ")
+compareChain(chain1, chain2)
+
+#exo 12
+studentsTuring = ["Redouane", "Justine", "Ruben", "Edouard"]
+name = "Julie"
+        
+    
+    
