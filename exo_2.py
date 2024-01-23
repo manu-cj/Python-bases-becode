@@ -1,6 +1,3 @@
-
-
-
 age = 32 
 age += 10
 divAge = age/7
@@ -97,6 +94,11 @@ def nameInList():
             
 nameInList()
 print(studentsTuring) 
+
+radius = 10
+pi = 3.14
+volume = (4/3) * pi * radius**3
+print(f"the volume of the sphere with radius {radius} is : {volume}")
         
     
     
