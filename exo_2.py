@@ -1,3 +1,6 @@
+
+
+
 age = 32 
 age += 10
 divAge = age/7
@@ -71,9 +74,29 @@ chain1 = input("Enter first chain ")
 chain2 = input("Enter second chain ")
 compareChain(chain1, chain2)
 
+
 #exo 12
 studentsTuring = ["Redouane", "Justine", "Ruben", "Edouard"]
 name = "Julie"
+
+print(f"Current list {studentsTuring}") 
+
+def nameInList():
+    if name in studentsTuring:
+        print("this name is in the list")
+    else:
+        print(f"{name} is not in the list")
+        response =  input(f"Do you want to add {name} to the list ? (type yes or no) ")
+        
+        if response.capitalize() == "Yes" or response.capitalize() == "Oui":
+            studentsTuring.append(name)
+            print(f"{name} is add in to the list")
+        if response.capitalize() == "no" or response.capitalize() == "no":
+            print(f"{name} is not add in to the list")
+            
+            
+nameInList()
+print(studentsTuring) 
         
     
     
