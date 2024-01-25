@@ -67,7 +67,6 @@ while choiceNumber >= 0:
     
 import random
 
-
 randomNumber = random.randint(1, 10)
 
 while True:
