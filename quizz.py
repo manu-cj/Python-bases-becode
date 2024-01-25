@@ -80,3 +80,46 @@ carDictionarie = {
     "year": 1964
 }
 
+yearValue = carDictionarie["year"]
+
+
+for value in carDictionarie:
+    
+    print(carDictionarie[value])
+    
+
+for index, (key, value) in enumerate(carDictionarie.items()):
+    print(f"Index: {index}, Key: {key}, Value: {value}")
+    
+newDictionarie = {
+    "cle_1" : "dictionary'car'",
+    "cle_2" : "dictionary'car'",
+    "cle_3" : "dictionary'car'"
+}
+
+#Functions
+
+fibonacci = []
+
+def fibonacciFunc(letter):
+    fiboElement = 0
+    while fiboElement < letter:
+        fiboElement += 1
+        fibonacci.append(fiboElement)
+        for fibo in fibonacci:
+            if letter >= fibo:
+                print(fibo)
+        
+
+fibonacciFunc(100)
+
+def fibonacciGenerator(number):
+    i = 0
+    while i < number:
+        i+= 1
+        yield i
+    
+for value in fibonacciGenerator(25):
+    print(value)
+
+
