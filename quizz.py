@@ -72,4 +72,11 @@ def firstLetter(param):
 
 print(firstLetter(stringInput))
 
-    
+#Dictionaries
+
+carDictionarie = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+
