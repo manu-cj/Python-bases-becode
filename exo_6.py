@@ -19,5 +19,23 @@ sum_of_students([["Jean", "Alice", "Edwige", "Peter", "James"],
 
 
 def is_divisible(n, x, y):
-    # Your code
-    return bool
+     return n % x == 0 and n % y == 0
+    
+print(is_divisible(3, 3, 3))
+
+def name_to_initials(full_name):
+    if full_name == "":
+        full_name = "Mr Anonimous"
+    words = full_name.split()
+    initials = '.'.join(word[0] for word in words)
+
+    return initials
+print(name_to_initials(name))
+
+def sum_of_positives(numbers):
+    return sum(num for num in numbers if num > 0)
+
+numbers = [1, -4, 7, 12]
+result = sum_of_positives(numbers)
+print(result)
+
